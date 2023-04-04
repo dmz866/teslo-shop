@@ -1,8 +1,7 @@
-import { IsArray, IsIn, IsInt, IsNumber, IsOptional, IsPositive, IsString, Min } from "class-validator";
+import { IsArray, IsIn, IsInt, IsNumber, IsOptional, IsPositive, IsString } from "class-validator";
 
 export class CreateProductDto {
 	@IsString()
-	@Min(1)
 	title: string;
 
 	@IsNumber()
